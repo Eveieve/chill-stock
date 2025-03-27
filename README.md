@@ -32,7 +32,7 @@ The system allows users to simply input what items they want to store and in wha
 
 ## 🧱Class Diagram 
 [chill-stock.drawio](../../../Downloads/Smart-fresh.drawio)
-![class_diagram.png](class_diagram.png)
+![chill-stock.jpg](../../../Downloads/chill-stock.jpg)
 
 ## 🏗 Project Structure
 ```
