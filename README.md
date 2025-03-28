@@ -1,10 +1,16 @@
-# Chill Stock
+#  🍅 🥬 🍋 Chill Stock 🍓 🧊 🥦
+### Chill Out, We’ll Keep It Fresh ❄️🥬
 
-[## 🇰🇷한국어 버전으로가기](#-한국어-버전) | [## Go to English Version](##-Description) 
+At Chill Stock, we let the customers chill while we handle the chill.
+Built for managing perishable goods in warehouse environments, this system automatically takes care of temperature, storage conditions, and space optimization—so your fresh goods stay fresh, and your operations stay cool.
+
+Because fresh goods deserve fresh handling. 
+
+[🇰🇷 한국어 버전으로가기](#-한국어-버전) | [Go to English Version](##-Description) 
 
 ## 🧾 Description
 **Chill Stock** is a Java-based warehouse management system built to handle fresh goods efficiently.
-The system allows users to simply input what items they want to store and in what quantity—**temperature, space, and storage conditions are automatically managed** by the system to ensure the goods' best state. It was built with a focus on clean backend architecture using the MVC pattern and manual dependency injection.
+The system allows users to simply input what items they want to store and in what quantity—**temperature, space, and storage conditions are automatically managed** by the system's algorithm to ensure the goods' best state. 
 
 ## 🔑 Key Focus Areas
 - Applying **MVC (Model-View-Controller)** architecture with separate layers - controller, service, repository, and model(dto,vo).
@@ -36,7 +42,56 @@ The system allows users to simply input what items they want to store and in wha
 
 ## 🏗 Project Structure
 ```
-
+├── chill-stock/
+│   ├── chill-stock/
+│   │   ├── doc/
+│   │   ├── sql/
+│   │   ├── src/
+│   │   │   Main.java
+│   │   │   ├── area/
+│   │   │   │   ├── common/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── auth/
+│   │   │   ├── diconfig/
+│   │   │   ├── inbound/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── exception/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── login/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   ├── object/
+│   │   │   ├── outbound/
+│   │   │   │   ├── common/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── database/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── user/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── view/
+│   │   │   ├── warehouse/
+│   │   │   │   ├── common/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
 ```
 ## ▶️ How to Run
 1. Clone this repository.
@@ -51,6 +106,12 @@ The system allows users to simply input what items they want to store and in wha
 - Java 17+
 - MySQL running locally
 - A database named `wms-db`
+
+## 📦 Directory Structure Design Principles
+- Adopted a Domain-Oriented Structure
+- Each layer is clearly separated by functionality, allowing domain-specific logic (e.g., controller, service, DTO) to be grouped and managed in one place, improving maintainability
+- As the project scales, this structure helps minimize the impact of adding or modifying features, enhancing scalability and flexibility
+- Team members can efficiently divide work by domain
 
 ## 🧬 Database Design
 - We designed the database schema and ERD diagram from scratch.
@@ -70,6 +131,13 @@ The system allows users to simply input what items they want to store and in wha
 
 # 🇰🇷 한국어 버전
 
+#  🍅 🥬 🍋 Chill Stock 🍓 🧊 🥦
+### Chill Out, We’ll Keep It Fresh ❄️🥬
+
+Chill Stock은 고객이 편히 쉴 수 있도록, 우리는 신선함을 책임지는 창고 관리 시스템입니다.
+온도, 보관 조건, 공간 최적화를 자동으로 처리하여 신선식품이 최상의 상태로 보관될 수 있도록 설계되었습니다.
+
+신선한 식재료엔, 신선한 관리가 필요하니까요.
 ## 🧾 프로젝트 설명
 **Chill Stock**은 신선 식품을 효율적으로 저장하기 위한 Java 기반 창고 관리 시스템입니다.  
 사용자는 저장하고 싶은 품목과 수량만 입력하면 되고, 시스템이 **적절한 온도, 공간, 보관 조건을 자동으로 계산 및 관리**해 최적의 상태로 유지해줍니다.  
@@ -82,12 +150,12 @@ The system allows users to simply input what items they want to store and in wha
 - **프로시저**, **트리거**, **제약조건**을 활용하여 데이터 무결성과 자동화 처리
 - [**팀 협업**](https://www.notion.so/1bd501101bba80578e4ee8296e04559a?v=1bd501101bba802f92d2000c7960b5ac)과 명확한 커뮤니케이션 중심의 개발
 
-## 👩‍💻 나의 역할
+## 👩‍💻 내 역할
 - **로그인 및 사용자 관리 기능** 구현
 - **사용자 인증 및 권한 분리**를 통해 사용자 역할에 따라 기능 접근 제어
 - 팀원들과의 긴밀한 협업을 통해 각 모듈이 원활하게 통합되도록 기여
 - **깔끔하고 모듈화된 코드 작성**에 집중
-- 팀 회의록을 정리하고 Notion 페이지를 구조화하여 명확한 커뮤니케이션과 진척 상황 공유를 담당
+- 팀 회의록을 정리하고 Notion 페이지를 구조화하여 명확한 커뮤니케이션과 팀 내 진척 상황 공유를 담당
 
 ## 🛠 기술 스택
 - Java
@@ -105,7 +173,56 @@ The system allows users to simply input what items they want to store and in wha
 
 ## 🏗 프로젝트 구조
 ```
-
+├── chill-stock/
+│   ├── chill-stock/
+│   │   ├── doc/
+│   │   ├── sql/
+│   │   ├── src/
+│   │   │   Main.java
+│   │   │   ├── area/
+│   │   │   │   ├── common/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── auth/
+│   │   │   ├── diconfig/
+│   │   │   ├── inbound/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── exception/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── login/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   ├── object/
+│   │   │   ├── outbound/
+│   │   │   │   ├── common/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── database/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── user/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
+│   │   │   ├── view/
+│   │   │   ├── warehouse/
+│   │   │   │   ├── common/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── dto/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── service/
+│   │   │   │   ├── vo/
 ```
 
 ## ▶️ 실행 방법
@@ -128,13 +245,18 @@ The system allows users to simply input what items they want to store and in wha
 
 - 데이터베이스 스키마와 ERD 다이어그램을 **처음부터 직접 설계**
 - 사용자, 물품, 창고 저장 공간 등 주요 엔티티를 **어떻게 모델링할지 팀원들과 논의**하며 구조화
-- 실세계의 창고 로직(수량, 온도, 공간 구역 등)을 반영하여 관계를 설계
+- 수량, 온도, 공간 구역 등 실제 창고의 운영 로직을 반영하여 엔티티 간 관계를 설계
+
+## 📦 디렉토리 구조 설계 기준
+- **도메인 기반 구조(Domain-Oriented Structure)** 채택 
+- 각 계층이 기능별로 명확하게 구분되어 각 도메인이 관련된 로직(controller, service, dto 등)을 한곳에 모아 관리할 수 있어 유지보수 용이 
+- 프로젝트 범위가 커질 시, 새로운 기능 추가/수정의 영향 범위를 최소화할 수 있어 확장성과 유연성이 높음
+- 팀원이 도메인 단위로 작업을 분담
 
 ## 🤝 팀 협업 및 개발 방식
-
 - 팀 내 일관성을 위해 커밋 메시지 규칙을 적용 (`doc/commit-convention.md`)
-- 모든 코드 변경은 PR을 통해 병합되었으며, PR 템플릿(`pull_request_template.md`)을 사용하여 코드 리뷰와 소통을 보장
-- 주기적인 회의를 통해 진행 상황을 공유하고 아키텍처 방향성을 함께 논의함
+- 모든 코드 변경은 Pull Request(PR)을 통해 병합되었으며, PR 템플릿(`pull_request_template.md`)을 사용
+- 정기 회의를 통해 진행 상황을 공유하고 프로젝트 방향성을 함께 논의함
 
 ## 🌱 향후 개선 사항
 
